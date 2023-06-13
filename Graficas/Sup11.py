@@ -6,7 +6,6 @@ y = np.arange(-1,1,0.1)
 x, y = np.meshgrid(x,y)
 z = np.sin(np.abs(x) - np.abs(y))
 
-my_cmap = plt.get_cmap('hot')
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.plot_surface(x,y,z,color='m')
